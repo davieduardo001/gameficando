@@ -11,7 +11,7 @@ export default function HomePage() {
         About Us
       </Link>
 
-      <h1 className="text-4xl font-bold text-blue-600">Hello Tailwind!</h1>
+      <h1 className={`text-4xl font-bold text-blue-600`}>Hello Tailwind!</h1>
       <p className="mt-4 text-gray-700">You’ve got Tailwind set up 🎉</p>
 
       <Hello/>
