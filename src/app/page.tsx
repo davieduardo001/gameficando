@@ -1,20 +1,19 @@
-import Hello from '@/components/Hello';
 import Link from 'next/link';
+import { nova_square } from '../../public/fonts/fonts';
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center">
-      <h1>Home</h1>
-      <p>Welcome to the site!</p>
+    <>
+    {/* hero section */}
+      <main className="flex min-h-screen flex-col items-center xl:pt-80 lg:pt-70 md:pt-70 pt-80 p-5 bg-[url('/images/gameficando_background.svg')]">
+        <img src="/images/logo.png" alt="logo" className='w-100 xl:min-w-150'/>
+        <h2 className='font-bold text-xl text-white'>Sua jornada de diversão e aprendizado começa gameficando!</h2>
+      </main>
 
-      <Link href="/about" className="text-blue-500 underline hover:text-blue-700">
-        About Us
-      </Link>
-
-      <h1 className={`text-4xl font-bold text-blue-600`}>Hello Tailwind!</h1>
-      <p className="mt-4 text-gray-700">You’ve got Tailwind set up 🎉</p>
-
-      <Hello/>
-    </main>
+    {/* beneficios do curso */}
+      <section className='flex min-h-screen flex-col'>
+        <h2>AAA</h2>
+      </section>
+    </>
   );
 }
